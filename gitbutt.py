@@ -12,5 +12,5 @@ with open('gitbutt.py', 'w') as f:
         f.write(i)
 
 subprocess.run(['git', 'commit', '-a', '-m', message])
-subprocess.run(['git', 'push', 'origin', 'master'])
-#2017-09-18 18:19:13
+subprocess.run(['git push origin master'])
+#2017-09-18 18:21:25
