@@ -2,7 +2,7 @@ import subprocess
 import datetime
 import os
 import time
-time.sleep(30)
+#time.sleep(30)
 path = os.path.dirname(os.path.realpath(__file__)) + '/gitbutt.py'
 message = '{0:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
 with open(path, 'r') as f:
@@ -13,4 +13,4 @@ with open(path, 'w') as f:
         f.write(i)
 subprocess.run(['git', 'commit', '-a', '-m', message])
 subprocess.run(['git', 'push', 'origin', 'master'])
-#2017-09-18 18:58:04
+#2017-09-18 18:58:39
