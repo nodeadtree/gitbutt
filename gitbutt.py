@@ -13,4 +13,4 @@ with open(path, 'w') as f:
         f.write(i)
 subprocess.run(['git', 'commit', '-a', '-m', message])
 subprocess.run(['git', 'push', 'origin', 'master'])
-#2017-11-08 14:22:08
+#2017-11-08 16:34:55
