@@ -7,7 +7,7 @@ import time
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-time.sleep(30)
+#time.sleep(30)
 path = os.path.dirname(os.path.realpath(__file__)) + '/gitbutt.py'
 message = '{0:%Y-%m-%d %H:%M:%S}'.format(datetime.datetime.now())
 with open(path, 'r') as f:
@@ -18,4 +18,4 @@ with open(path, 'w') as f:
         f.write(i)
 subprocess.run(['git', 'commit', '-a', '-m', message])
 subprocess.run(['git', 'push', 'origin', 'master'])
-#2019-02-15 21:29:24
+#2019-08-04 22:17:12
